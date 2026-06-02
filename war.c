@@ -31,7 +31,27 @@
 
 // --- Função Principal (main) ---
 // Função principal que orquestra o fluxo do jogo, chamando as outras funções em ordem.
-int main() {
+int main(cadastrando territorio 2)
+Nome do territorio : Europa
+Cor do exercito (ex: Azul, Verde):Verde
+Numero de tropas: 3
+
+cadastrando territorio 3
+Nome do territorio : Asia 
+Cor do exercito (ex: Azul, Verde):Vermelha
+Numero de tropas: 5
+
+cadastrando territorio 4
+Nome do territorio : Africa
+Cor do exercito (ex: Azul, Verde):Amarelo
+Numero de tropas: 4
+
+cadastrando territorio 5
+Nome do territorio : Oceania
+Cor do exercito (ex: Azul, Verde):Branca
+Numero de tropas: 2
+
+{
     // 1. Configuração Inicial (Setup):
     // - Define o locale para português.
     // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
