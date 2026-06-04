@@ -34,22 +34,41 @@
 int main(cadastrando territorio 2)
 Nome do territorio : Europa
 Cor do exercito (ex: Azul, Verde):Verde
-Numero de tropas: 3
+Numero de tropas: 2
 
 cadastrando territorio 3
 Nome do territorio : Asia 
 Cor do exercito (ex: Azul, Verde):Vermelha
-Numero de tropas: 5
+Numero de tropas: 4
 
 cadastrando territorio 4
 Nome do territorio : Africa
 Cor do exercito (ex: Azul, Verde):Amarelo
-Numero de tropas: 4
+Numero de tropas: 2
 
 cadastrando territorio 5
 Nome do territorio : Oceania
 Cor do exercito (ex: Azul, Verde):Branca
 Numero de tropas: 2
+
+cadastrando territorio 5
+Nome do territorio : America
+Cor do exercito (ex: Azul, Verde):Azul
+Numero de tropas: 3
+
+MAPA DO MUNDO - ESTADO ATUAL 
+
+1.Europa (Exercito verde, Tropas: 2)
+2.Asia (Exercito )Vermelho, Tropas: 4)
+3. Africa (Exercito amarelo, Tropas: 2)
+4. Oceania ( Exercito Branco, Tropas: 2)
+5. America ( Exercito Azul, Tropas: 3)
+
+---- FASE DE ATAQUE ----
+
+Escolha o territotio atacante (1 a 5, ou 0 para sair): 0
+Escolha o territotia defensor (1 a 5): 3
+
 
 {
     // 1. Configuração Inicial (Setup):
