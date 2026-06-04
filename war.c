@@ -15,15 +15,44 @@
 // ============================================================================
 
 // Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 // --- Constantes Globais ---
 // Definem valores fixos para o número de territórios, missões e tamanho máximo de strings, facilitando a manutenção.
+#define MAX_LIVROS 50
+#define MAX_EMPRESTIMOS 100
+#define MAX_STRING 100
+
 
 // --- Estrutura de Dados ---
 // Define a estrutura para um território, contendo seu nome, a cor do exército que o domina e o número de tropas.
+struct livro { 
+    char nome[TAM_STRING];
+    char autor[TAM_STRING];
+    char edutora[TAM_STRING];
+    int edicao;
+    int disponivel;
+
+};
+
+struct emprestimo { 
+    int indicelivro;
+    char nomeUsuario[TAM_STRING];
+
+};
 
 // --- Protótipos das Funções ---
 // Declarações antecipadas de todas as funções que serão usadas no programa, organizadas por categoria.
+void limparbufferEntrada();
+void exibirMenu();
+void cadastrarLivro(struct livro *biblioteca, int *totalLivros);
+void listarLivros(const struct Livro *biblioteca, int totalLivros);
+void realizarEmprestimo(const struct Livro *biblioteca, int totalLivros, struct Emprestimo *emprestimos,);
+void listarEmprestimos((const struct Livro *biblioteca, int totalLivros, struct Emprestimo *emprestimos,););
+void liberarMemoria(struct Livro *biblioteca, struct Emprestimo *emprestimos);
+
 // Funções de setup e gerenciamento de memória:
 // Funções de interface com o usuário:
 // Funções de lógica principal do jogo:
@@ -31,46 +60,9 @@
 
 // --- Função Principal (main) ---
 // Função principal que orquestra o fluxo do jogo, chamando as outras funções em ordem.
-int main(cadastrando territorio 2)
-Nome do territorio : Europa
-Cor do exercito (ex: Azul, Verde):Verde
-Numero de tropas: 2
+int main(){
 
-cadastrando territorio 3
-Nome do territorio : Asia 
-Cor do exercito (ex: Azul, Verde):Vermelha
-Numero de tropas: 4
-
-cadastrando territorio 4
-Nome do territorio : Africa
-Cor do exercito (ex: Azul, Verde):Amarelo
-Numero de tropas: 2
-
-cadastrando territorio 5
-Nome do territorio : Oceania
-Cor do exercito (ex: Azul, Verde):Branca
-Numero de tropas: 2
-
-cadastrando territorio 5
-Nome do territorio : America
-Cor do exercito (ex: Azul, Verde):Azul
-Numero de tropas: 3
-
-MAPA DO MUNDO - ESTADO ATUAL 
-
-1.Europa (Exercito verde, Tropas: 2)
-2.Asia (Exercito )Vermelho, Tropas: 4)
-3. Africa (Exercito amarelo, Tropas: 2)
-4. Oceania ( Exercito Branco, Tropas: 2)
-5. America ( Exercito Azul, Tropas: 3)
-
----- FASE DE ATAQUE ----
-
-Escolha o territotio atacante (1 a 5, ou 0 para sair): 0
-Escolha o territotia defensor (1 a 5): 3
-
-
-{
+}
     // 1. Configuração Inicial (Setup):
     // - Define o locale para português.
     // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
